@@ -19576,7 +19576,7 @@ Transform:
   m_Children:
   - {fileID: 81170338}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &179805789
 GameObject:
@@ -19969,6 +19969,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -19984,6 +19985,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc9f0de979ce784cbe6cd9a25058a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectToFollow: {fileID: 2109759225}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -20083,7 +20097,7 @@ Transform:
   m_Children:
   - {fileID: 1677163813}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &877654638
 GameObject:
@@ -20127,7 +20141,7 @@ Transform:
   m_Children:
   - {fileID: 505160563}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1203123999
 GameObject:
@@ -25220,7 +25234,7 @@ Transform:
   m_Children:
   - {fileID: 179805790}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1381921161
 GameObject:
@@ -25264,7 +25278,7 @@ Transform:
   m_Children:
   - {fileID: 1768440934}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1601275644
 GameObject:
@@ -28459,7 +28473,7 @@ Transform:
   m_Children:
   - {fileID: 1203124000}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1768440933
 GameObject:
@@ -28988,7 +29002,7 @@ Transform:
   m_Children:
   - {fileID: 1601275645}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2109759225
 GameObject:
@@ -29002,9 +29016,9 @@ GameObject:
   - component: {fileID: 2109759227}
   - component: {fileID: 2109759229}
   - component: {fileID: 2109759226}
-  - component: {fileID: 2109759230}
+  - component: {fileID: 2109759231}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29022,7 +29036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d77ecf405c78489034e9fd76bbded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
+  movementSpeed: 7
 --- !u!212 &2109759227
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29061,7 +29075,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_Sprite: {fileID: 3485680785663652765, guid: b33a442dc1ddcc64fab4c60fe80edc23,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -29082,11 +29096,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109759225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7, y: 0.01, z: -31.557037}
+  m_LocalPosition: {x: -1.83, y: -0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2109759229
 Rigidbody2D:
@@ -29109,16 +29123,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2109759230
-MonoBehaviour:
+--- !u!70 &2109759231
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109759225}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbc9f0de979ce784cbe6cd9a25058a00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectToFollow: {fileID: 2109759225}
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.46875, y: 0.96875}
+  m_Direction: 0

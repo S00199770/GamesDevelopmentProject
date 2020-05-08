@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float movementSpeed = 10;
-    Vector3 mousePosition;
+    public float movementSpeed = 10f;
+
+    Vector2 mousePosition;
 
     float h, v;
     Rigidbody2D body;
@@ -17,20 +18,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = 0;
-
-        Vector3 direction = mousePosition - transform.position;
-        direction.Normalize();
-
-        transform.up = direction;
-
-        h = Input.GetAxisRaw("Horizontal");
-        v = Input.GetAxisRaw("Vertical");
+        mousePosition.x = Input.GetAxisRaw("Horizontal");
+        mousePosition.y = Input.GetAxisRaw("Vertical");
     }
 
     private void FixedUpdate()
     {
-        body.velocity = new Vector2(h, v) * movementSpeed * Time.deltaTime;
+        body.MovePosition(body.position + mousePosition * movementSpeed * Time.fixedDeltaTime);
     }
 }
