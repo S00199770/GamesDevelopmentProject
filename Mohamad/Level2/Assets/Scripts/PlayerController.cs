@@ -4,31 +4,35 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float baseMovementSpeed = 1.0f;
-    public float movementSpeed = 100f;
-    Vector3 movementDirection;
-    float h;
-    float v;
+    Vector3 targetPosition;
+    Vector3 direction;
+    public float h, v;
+    Rigidbody2D body;
 
-    Rigidbody2D bdy;
-
+    public float movementSpeed = 400;
 
     void Start()
     {
-        bdy = GetComponent<Rigidbody2D>();     
+        body = GetComponent<Rigidbody2D>();
     }
 
-    
     void Update()
     {
+
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
-        movementDirection = new Vector3(h, v, 0);
-        Movement();
     }
 
-    void Movement() //Player movement
+    private void FixedUpdate()
     {
-        bdy.velocity = transform.position + (movementDirection * movementSpeed) * Time.deltaTime;
+        /* 
+         * Movement is relative to the world (up/down is always going to move on the Y Axis, left/right is always going to move on the X Axis 
+         * 1. Mulitply our h and v values by movementSpeed
+         * 2. Add the result of step 1 to our current position
+         * 3. Set the position of the RigidBody2D to this new location (teleporting our object a very short distance to move)
+         */
+
+        body.MovePosition(transform.position + (new Vector3(h, v, 0) * movementSpeed) * Time.deltaTime);
     }
 }
+
