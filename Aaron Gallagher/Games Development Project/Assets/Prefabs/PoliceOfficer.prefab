@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5892598753484143275}
   - component: {fileID: 5892598753484143272}
   - component: {fileID: 5892598753484143278}
-  - component: {fileID: 2329899800991858273}
+  - component: {fileID: 425470809927896363}
   m_Layer: 0
   m_Name: PoliceOfficer
   m_TagString: Enemy
@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectToFollow: {fileID: 0}
   walkSpeed: 1.3
+  enemyHit: 0
   minimumRange: 8
   halfOfMinRange: 0
   animator: {fileID: 5892598753484143277}
@@ -177,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
---- !u!114 &2329899800991858273
+--- !u!114 &425470809927896363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
