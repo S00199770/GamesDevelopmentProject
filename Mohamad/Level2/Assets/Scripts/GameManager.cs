@@ -6,43 +6,32 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int numberOfZombies; //store number of zombies here
-    
     public Text healthTextBox;
-    
+    public Text policeBrainwashedCounter;
+    public Text policeNumberLeft;
+    public int policeLeft;
+    public int brainwashedLeft;
     PlayerHealth playerHealth;
-    Vector3 playerPosition;
-    Vector3 camera;
 
     void Awake()
     {
-
         //do not remove
         DontDestroyOnLoad(this);
-        
-        // numberOfZombies = GameObject.FindGameObjectsWithTag("Zombie").Length;
         healthTextBox = GameObject.FindGameObjectWithTag("HealthText").GetComponent<Text>();
-        camera = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-        playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
+        policeBrainwashedCounter = GameObject.FindGameObjectWithTag("BrainWashedText").GetComponent<Text>();
+        policeNumberLeft = GameObject.FindGameObjectWithTag("PoliceLeftText").GetComponent<Text>();
+
+        //number of gameobjects
+        brainwashedLeft = GameObject.FindGameObjectsWithTag("BrainWashed").Length;
+        policeLeft = GameObject.FindGameObjectsWithTag("Enemy").Length;
     }
 
     private void Update()
     {
         healthTextBox.text = "Health: " + playerHealth.Health;
-        camera = playerPosition;
+        policeBrainwashedCounter.text = "Police Brainwashed: " + brainwashedLeft;
+        policeNumberLeft.text = "Police Left: " + policeLeft;
     }
 
-    /* public void RecordZombieDeath() //method to call when killing a zombie
-    {
-        if(true)
-        {
-            numberOfZombies--; // subtract from total number of zombies
-        }
-        
-        if(numberOfZombies <= 0)
-        {
-            SceneManager.LoadScene("GameComplete");
-        }
-    } */
 }

@@ -1,7 +1,67 @@
 fileFormatVersion: 2
 guid: d3375669da185054bba6b5c4e14eac3e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6370933269118426954
+    second: TileSheet-SafeRoom_0
+  - first:
+      213: -8135113081421403449
+    second: TileSheet-SafeRoom_1
+  - first:
+      213: -8195729774975068989
+    second: TileSheet-SafeRoom_2
+  - first:
+      213: 5510303483171940398
+    second: TileSheet-SafeRoom_3
+  - first:
+      213: 5376102979489353126
+    second: TileSheet-SafeRoom_4
+  - first:
+      213: 5720172277541131393
+    second: TileSheet-SafeRoom_5
+  - first:
+      213: 5123627269542052626
+    second: TileSheet-SafeRoom_6
+  - first:
+      213: -4508575107832108582
+    second: TileSheet-SafeRoom_7
+  - first:
+      213: -4897117512069865299
+    second: TileSheet-SafeRoom_8
+  - first:
+      213: 3588981742945732488
+    second: TileSheet-SafeRoom_9
+  - first:
+      213: -4905435508590272272
+    second: TileSheet-SafeRoom_10
+  - first:
+      213: -3623099554540756195
+    second: TileSheet-SafeRoom_11
+  - first:
+      213: 7029955218739306283
+    second: TileSheet-SafeRoom_12
+  - first:
+      213: 7535056216539408106
+    second: TileSheet-SafeRoom_13
+  - first:
+      213: -8446129380764954235
+    second: TileSheet-SafeRoom_14
+  - first:
+      213: -6027588485779364288
+    second: TileSheet-SafeRoom_15
+  - first:
+      213: 8156792259051154251
+    second: TileSheet-SafeRoom_16
+  - first:
+      213: -4637251368304833355
+    second: TileSheet-SafeRoom_17
+  - first:
+      213: 8007306285519245636
+    second: TileSheet-SafeRoom_18
+  - first:
+      213: -1128778031254195478
+    second: TileSheet-SafeRoom_19
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +100,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 33
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +130,441 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 164
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b06a7642f5e597a0800000000000000
+      internalID: -6370933269118426954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 164
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca6e3e01c54a1f80800000000000000
+      internalID: -8135113081421403449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 164
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4d487413be24e80800000000000000
+      internalID: -8195729774975068989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 164
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28af07b2d7887c40800000000000000
+      internalID: 5510303483171940398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 146
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adc1601d21cb9a40800000000000000
+      internalID: 5376102979489353126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_5
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 153
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18450e03162226f40800000000000000
+      internalID: 5720172277541131393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_6
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 161
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2130f820bd7ca1740800000000000000
+      internalID: 5123627269542052626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9af7ea3d25e61c0800000000000000
+      internalID: -4508575107832108582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_8
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 127
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da02bbd9191f90cb0800000000000000
+      internalID: -4897117512069865299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_9
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 141
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88784a541ef9ec130800000000000000
+      internalID: 3588981742945732488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 87
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0a3e125646cebb0800000000000000
+      internalID: -4905435508590272272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_11
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 82
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13e8b1b62a28bdc0800000000000000
+      internalID: -3623099554540756195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_12
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 82
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f1cdf660b6f8160800000000000000
+      internalID: 7029955218739306283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 82
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae62e6dd4b5e19860800000000000000
+      internalID: 7535056216539408106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 47
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581d384e31259ca80800000000000000
+      internalID: -8446129380764954235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 42
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046e2ec2534b95ca0800000000000000
+      internalID: -6027588485779364288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 42
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b6663d75fb23170800000000000000
+      internalID: 8156792259051154251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 42
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc0ff1237c25afb0800000000000000
+      internalID: -4637251368304833355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 7
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441902464aaaf1f60800000000000000
+      internalID: 8007306285519245636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSheet-SafeRoom_19
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 7
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae234d07c56c550f0800000000000000
+      internalID: -1128778031254195478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

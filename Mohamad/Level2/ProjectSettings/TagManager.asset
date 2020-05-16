@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - HealthText
+  - Enemy
+  - Door
+  - Key
+  - Walls
+  - Floor
+  - HitRadius
+  - BrainWashedText
+  - PoliceLeftText
   layers:
   - Default
   - TransparentFX
@@ -14,9 +22,9 @@ TagManager:
   - UI
   - 
   - 
+  - Roof
+  - Walls
   - Floor
-  - 
-  - 
   - 
   - 
   - 
@@ -50,4 +58,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2038640331
+    locked: 0
+  - name: Enemies
+    uniqueID: 487220127
     locked: 0
