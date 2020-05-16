@@ -4,25 +4,19 @@ using UnityEngine;
 
 public class FollowMovement : MonoBehaviour
 {
-    //the game object we are going to follow
-    public GameObject ObjectToFollow;
+    public GameObject objectToFollow; //player to follow
 
-    //the position of where we are going to be
-    Vector3 targetPosition;
+    public float speed = 5.0f; //speed for the camera to close the distance between it and the player
 
     void Update()
     {
-        if (ObjectToFollow != null)
-        {
-            //get teh X and Y position of the object we are following
-            targetPosition.x = ObjectToFollow.transform.position.x;
-            targetPosition.y = ObjectToFollow.transform.position.y;
+        float interpolation = speed * Time.deltaTime; //make it smooth so frame rate wont affect camera speed
 
-            //keep our own Z position
-            targetPosition.z = transform.position.z;
+        Vector3 position = this.transform.position;
+        //Lerp gets the two positions and gradually closes the distance between the two positions
+        position.y = Mathf.Lerp(this.transform.position.y, objectToFollow.transform.position.y, interpolation);
+        position.x = Mathf.Lerp(this.transform.position.x, objectToFollow.transform.position.x, interpolation);
 
-            //update the position of this object
-            transform.position = targetPosition;
-        }
+        this.transform.position = position;
     }
 }
