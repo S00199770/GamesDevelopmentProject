@@ -12,7 +12,9 @@ public class GameManager : MonoBehaviour
     public int policeLeft;
     public int brainwashedLeft;
     PlayerHealth playerHealth;
-
+    public int heldKeys = 0;
+   
+    
     void Awake()
     {
         //do not remove
@@ -33,5 +35,17 @@ public class GameManager : MonoBehaviour
         policeBrainwashedCounter.text = "Police Brainwashed: " + brainwashedLeft;
         policeNumberLeft.text = "Police Left: " + policeLeft;
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Key")) //key to open door to next level/ finish game
+        {
+            heldKeys += 1;
+            Destroy(collision.gameObject);
+        }
 
+        if (collision.gameObject.CompareTag("Lockdoor1") && heldKeys >= 3)
+        {
+            SceneManager.LoadScene("GameComplete");
+        }
+    }
 }

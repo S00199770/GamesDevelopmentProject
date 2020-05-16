@@ -13,6 +13,9 @@ TagManager:
   - HitRadius
   - BrainWashedText
   - PoliceLeftText
+  - Bullet
+  - Lockdoor1
+  - LockedDoor2
   layers:
   - Default
   - TransparentFX

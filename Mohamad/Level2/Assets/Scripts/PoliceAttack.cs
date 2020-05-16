@@ -25,13 +25,13 @@ public class PoliceAttack : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && gameObject.tag == "Enemy") //attack the player if the cop is not brainwashed
         {
             
-            playersHealth.ApplyDamage(25);
+            playersHealth.ApplyDamage(10);
             
         }
         if (collision.gameObject.CompareTag("Enemy") && gameObject.tag == "BrainWashed") //attack the other officers if the cop is brainwashed
         {
             
-            policeHealth.ApplyDamage(25);
+            policeHealth.ApplyDamage(10);
         }
     }
 }
